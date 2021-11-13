@@ -6,4 +6,4 @@ There is an index.html with basic content, a style.css file with styling to the 
 
 Here is a link to the github repository: https://github.com/Harrison-Reich/passwordGenerator
 
-Here is a link to the live website: 
+Here is a link to the live website: https://harrison-reich.github.io/passwordGenerator/
