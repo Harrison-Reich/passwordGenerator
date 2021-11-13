@@ -89,14 +89,18 @@ document.getElementById('generate').addEventListener('click', () => {
     if (generator.special) {
       list += special;
     }
-    if (genertator.number) {
+    if (generator.number) {
       list += numbers;
     }
 
+    let result = "";
     //  for loop to randomize password
-
-
-    //display to user
-
+    for (let i = 0; i < generator.length; i++) {
+      let char_index = Math.floor(Math.random() * list.length);
+      let char = list.substr(char_index, 1);
+      result = result + char;
+    }
+    document.getElementById('password').textContent = result;
   }
+  //display to user
 })
