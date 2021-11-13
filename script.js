@@ -1,3 +1,5 @@
+//             Defined object with values and created variables 
+
 document.getElementById('generate').addEventListener('click', () => {
   let generator = {
     length: 0,
@@ -13,7 +15,7 @@ document.getElementById('generate').addEventListener('click', () => {
   let special = '!@#$%^&*()_+{}[];:,<.>/?`~|';
 
 
-  //              FROM HERE DOWN
+  //          Prompts and Functions
 
   do {
     alert('Please input a number between 8-128 to choose the length of your password');
@@ -94,13 +96,13 @@ document.getElementById('generate').addEventListener('click', () => {
     }
 
     let result = "";
-    //  for loop to randomize password
+    //                For loop to randomize password
     for (let i = 0; i < generator.length; i++) {
       let char_index = Math.floor(Math.random() * list.length);
       let char = list.substr(char_index, 1);
       result = result + char;
     }
+    //              Display to user on screen
     document.getElementById('password').textContent = result;
   }
-  //display to user
 })
